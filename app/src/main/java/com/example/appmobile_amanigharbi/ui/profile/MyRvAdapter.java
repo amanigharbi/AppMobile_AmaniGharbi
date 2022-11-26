@@ -3,6 +3,7 @@ package com.example.appmobile_amanigharbi.ui.profile;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,11 +12,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.appmobile_amanigharbi.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
 class MyRvAdapter extends RecyclerView.Adapter<MyRvAdapter.MyHolder> {
-    ArrayList<String> data;
-
-    public MyRvAdapter(ArrayList<String> data) {
+    List<ModelData> data;
+    public MyRvAdapter(List<ModelData> data) {
         this.data = data;
     }
 
@@ -31,8 +32,8 @@ class MyRvAdapter extends RecyclerView.Adapter<MyRvAdapter.MyHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyHolder holder, int position) {
-        holder.tvNom.setText(data.get(position));
-        holder.tvAge.setText(data.get(position));
+        holder.tvNom.setText(data.get(position).getFirstName()+" "+data.get(position).getLastName());
+        holder.tvAge.setText(data.get(position).getAge()+" Ans");
     }
 
     @Override

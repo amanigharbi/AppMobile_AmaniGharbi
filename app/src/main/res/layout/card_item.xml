@@ -32,7 +32,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
-                android:text="Jerry SMITH"
                 android:padding="30dp"
                 android:textAlignment="center"
 
@@ -42,7 +41,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="120dp"
-                android:text="10 ans"
                 android:paddingLeft="50dp"
                 android:paddingTop= "35dp"
                 android:paddingBottom="10dp"
