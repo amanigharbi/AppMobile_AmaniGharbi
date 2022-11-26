@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ui.profile.ProfileFragment">
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="400dp"
-        android:layout_height="200dp"
-        android:src="@drawable/header"
-        tools:ignore="MissingConstraints"
-        />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:src="@drawable/header"
+                tools:ignore="MissingConstraints" />
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,14 +43,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginBottom="150dp"
         android:layout_marginLeft="110dp"
         android:layout_marginTop="70dp">
+
         <ImageView
             android:id="@+id/user"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/avatar03"
-            />
+            android:src="@drawable/avatar04" />
 
         <TextView
             android:id="@+id/profil"
@@ -97,7 +101,7 @@
             android:background="@drawable/round2"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="340dp"
-            android:hint="SMITH"
+            android:hint="Dubois"
             android:padding="10dp"
             />
         <TextView
@@ -119,14 +123,15 @@
                 android:id="@+id/radioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/garcon" />
+                android:text="@string/garcon"
+                android:checked="true"/>
             <RadioButton
 
                 android:id="@+id/radioButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fille"
-                android:checked="true"/>
+                />
             <RadioButton
 
                 android:id="@+id/radioButton3"
@@ -148,7 +153,7 @@
             android:background="@drawable/round2"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="480dp"
-            android:hint="26 June 2016"
+            android:hint="05 Oct 2004"
             android:padding="10dp"
             android:inputType="date"
             android:drawablePadding="5dp"
@@ -168,10 +173,10 @@
             android:textColor="@color/Blue4in1"/>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/social"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="560dp"
-        android:layout_marginBottom="60dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp"
@@ -329,12 +334,12 @@
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_next"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_edit"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="250dp"
+        android:layout_marginLeft="200dp"
         android:layout_marginRight="10dp"
-        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
         android:padding="10dp"
         android:background="@drawable/round3"
         android:drawableRight="@android:drawable/ic_menu_send"
@@ -342,7 +347,9 @@
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
-/>
+        android:layout_below="@+id/social"
+
+        />
 </RelativeLayout>
     </ScrollView>
-</FrameLayout>
+</RelativeLayout>
