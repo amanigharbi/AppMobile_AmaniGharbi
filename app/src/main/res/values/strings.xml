@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AppMobile_AmaniGharbi</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="profile">Profil</string>
+    <string name="nom_profile">Nom de profile</string>
+    <string name="mail">mail@gmail.com</string>
+    <string name="enfant">Enfants</string>
+    <string name="param_compte">Paramètres du compte</string>
+    <string name="conf">Configuration de Notification</string>
+    <string name="forfait">Forfait et Paiement</string>
+    <string name="sécurité">Sécurité</string>
+    <string name="modifier">Modifier le profil de l\'enfant</string>
+    <string name="prénom">Prénom</string>
+    <string name="nom">Nom</string>
+    <string name="genre">Genre</string>
+    <string name="garcon">garçon</string>
+    <string name="fille">fille</string>
+    <string name="autre">Autre</string>
+    <string name="birth">Date de naissance</string>
+    <string name="res_soc">Les réseaux sociaux de l\'enfant</string>
+    <string name="user_name">User name</string>
+    <string name="twitter">Twitter</string>
+    <string name="instagram">Instgram</string>
+    <string name="edit">Modifier</string>
+
+</resources>
