@@ -23,6 +23,7 @@
     <string name="user_name">User name</string>
     <string name="twitter">Twitter</string>
     <string name="instagram">Instgram</string>
+    <string name="user">\@saraa123</string>
     <string name="edit">Modifier</string>
 
 </resources>
